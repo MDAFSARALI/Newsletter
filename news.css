@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#news{
+    /* height: fit-content; */
+    padding-bottom: 5vh;
+    background-color:  #083147;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter_container{
+    margin-top: 20vh;
+    width: 100vw;
+    padding-top: 4vh;
+    text-align: center;
+    color: white;  
+    background-color:  #083147;
+    padding-bottom: 5vh;
+}
+.newsletter_container h1{
+    font-size: 20px;
+    display: inline;
+    padding-top: 10vh;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter_container h1 span{
+    position: relative;
+}
+.newsletter_container h1 span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-top: 2.5px solid red;
+    left: 0;
+    bottom: -10px;
+    border-radius: 100%;
+    height: 5px;
+}
+.newsletter_container p{
+    max-width: 70%;
+    margin: 40px auto;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+.emailBox{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.emailBox i{
+    background:#2f3542;
+    width: 40px;
+    line-height: 40px;
+
+
+}
+.emailBox:hover > .tbox ,.btn:focus{
+    width: 250px;
+    padding: 0 10px;
+    max-width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+
+}
+.emailBox  button:focus{
+    width: 130px;
+    transition: 0.9ms;
+    background: linear-gradient(to right, red,rgb(181, 8, 8)) left;
+}
+.emailBox  button:focus::after{
+    content: 'D';
+    /* background-position: left bottom; */
+}
+.tbox,.btn{
+    border: none;
+    outline: none;  
+}
+.tbox{
+    width: 0px;
+    transition: 0.6s;
+    height: 40px;
+}
+.btn{
+    background: #2f3542;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 40px;
+}
