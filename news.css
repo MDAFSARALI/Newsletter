@@ -9,6 +9,8 @@
     background-color:  #083147;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .newsletter_container{
     margin-top: 20vh;
@@ -94,4 +96,76 @@
     text-transform: uppercase;
     cursor: pointer;
     height: 40px;
+}
+
+
+/* Video section */
+#page6{
+    min-height: 80vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    color: black;
+    padding-bottom: 13vh;
+
+}
+.section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13vh 10vw;
+    padding-bottom: 0;
+}
+.sec-left{
+    height: 100%;
+    width: 25%;
+    padding-top: 3vh;
+    border-top: 2px solid #000;
+
+}
+.sec-left h2{
+    font-size: 2.1vw;
+    font-weight: 500;
+    color: black;
+    font-weight: bolder;
+    font-style: i;
+}
+.sec-left p{
+    color: black;
+    margin-top: 8vh;
+    font-size: 1.2vw;
+    width: 80%;
+}
+.sec-right{
+    height: 100%;
+    width: 70%;
+    background-color: blanchedalmond;
+    position: relative;
+    border-radius: 10px;
+}
+.sec-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.sec-right video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity ease 0.3s;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:600px) and (min-width:1200) {
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
 }
